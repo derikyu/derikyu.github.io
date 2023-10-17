@@ -1,19 +1,19 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
+console.log(sections);
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".content section");
+  let currentSectionIndex = 0;
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+  const prevButton = document.getElementById("prev-button");
+  const nextButton = document.getElementById("next-button");
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+  prevButton.addEventListener("click", function () {
+      currentSectionIndex = Math.max(0, currentSectionIndex - 1);
+      sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
+  });
+
+  nextButton.addEventListener("click", function () {
+      currentSectionIndex = Math.min(sections.length - 1, currentSectionIndex + 1);
+      sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
+  });
+});

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -11,7 +12,8 @@
 <!-- Hero Section -->
 <header class="hero">
     <div class="hero-content">
-        <h1 class="hero-title">Hello, I'm Derek</h1>
+        <h1 class="hero-title">Hello, I'm Derek Addo</h1>
+        <p class="hero-subtitle-yellow">Fintech | BizOps | Product Mgmt</p>
         <p class="hero-subtitle">What would you like to know about me?</p>
     </div>
     <!-- Navigation Section -->
@@ -20,11 +22,11 @@
             <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#currently">Currently</a></li>
-                <!-- <li><a href="#portfolio">Toolbox</a></li> -->
+                <li><a href="#portfolio">Toolbox</a></li>
                 <li><a href="#portfolio">Focus Areas</a></li>
                 <!-- <li><a href="#portfolio">Compass</a></li> -->
                 <!-- <li><a href="#portfolio">Endorsements</a></li> -->
-                <!-- <li><a href="#portfolio">Blog</a></li> -->
+                <li><a href="https://medium.com/@whoisderekdash " target="_blank">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -37,7 +39,10 @@
         <div class="about-columns">
             <div class="about-column left"> <!-- Add the "left" class here -->
                 <h2 class="section-title">About Me</h2>
-                <p class="about-text"><b>Fintech | BizOps | Product Mgmt</b></p>
+                <p class="about-text">Experienced Product Operations specialist with 9+ years across 3 continents overseeing the
+                    management of complex growth initiatives and supporting geographically-distributed teams to leverage technology to
+                    drive operational efficiency, business growth and profitability. Areas of expertise include agile project
+                    management, process engineering, enterprise design thinking and data analytics.</p>
                 <p class="about-text">I have a deep-rooted belief in the transformative power of technology and entrepreneurship to
                     solve big problems, in particular across the African continent. My affinity for technology-centric innovation stems
                     from my academic studies in Information Systems. I enjoy first-principles thinking and breaking down complex
@@ -126,9 +131,10 @@
 
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio" style="padding-bottom: 0px;">
     <div class="container">
         <h2 class="section-title">Focus Areas</h2>
+        <!-- <hr width="30%"> -->
         <div class="portfolio-items">
             <div class="portfolio-item">
                 <h5 class="project-title">Open Banking</h5>
@@ -157,12 +163,14 @@
         </div>
     </div>
 </section>
+<p class="portfolio-sub-text" text><b>Note:</b> Outside of my professional capacity, I also have an interest in <b>AgriTech</b> and exploring <b>Innovation in Agriculture</b></p>
+
 
 <!-- Contact Section -->
 <section id="contact" class="contact">
     <div class="container">
         <!-- <h2 class="section-title">Say Hi</h2> -->
-        <h2 class="section-title">Something to say?</h2>
+        <h2 class="contact-title">Something to say?</h2>
         <div class="contact-columns">
             <div class="contact-column">
                 <!-- Left column content (e.g., form) -->
@@ -171,38 +179,48 @@
                     idea, or just want to say hello, shoot me an email at <a href="#">derek.addo[at]meltwater.org</a> and let's
                     create something awesome together!</p>
                 <ul class="contact-links">
-                <li><a href="#">LinkedIn</a></li>      
-                <li><a href="#">Github</a></li> 
-                <li><a href="#">X</a></li>      
-                <li><a href="#">Medium</a></li> 
+                <li><a href="https://uk.linkedin.com/in/derek-amoako-addo" target="_blank">LinkedIn</a></li>      
+                <li><a href="https://github.com/derikyu" target="_blank">Github</a></li> 
+                <li><a href="https://twitter.com/whoisderekdash" target="_blank">X</a></li>      
+                <li><a href="https://medium.com/@whoisderekdash" target="_blank">Medium</a></li> 
                 </ul>
             </div>
             <div class="contact-column">
                 <!-- Right column content (e.g., contact information) -->
-                <form class="contact-form">
+                <form action="https://send.pageclip.co/cnjhRUdek2VmeMTf79q8Q60EMXv8oCa7" class="pageclip-form" method="post">
                     <div class="form-group">
+                        <!-- Pageclip inputs - Make sure they have a "name" attribute! -->
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name" class="form-control">
+                        <input type="text" name="name" id="name" placeholder="Your Name" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email" class="form-control">
+                        <input type="email" name="email" id="email" placeholder="Your Email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="Subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Your Subject" class="form-control">
+                        <input type="text" name="subject" id="subject" placeholder="Your Subject" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="4" placeholder="Your Message" class="form-control"></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                    <button type="submit" class="pageclip-form__submit">
+                        <span>Send</span>
+                    </button>
                 </form>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Add Up and Down Buttons -->
+
+<div class="sticky-buttons">
+    <button class="button" id="prev-button">Prev</button>
+    <button class="button" id="next-button">Next</button>
+</div>
 
 <!-- Footer Section -->
 <footer class="footer">
@@ -212,8 +230,8 @@
 </footer>
 
 <!-- JavaScript (at the end of the body) -->
-<script src="script.js"></script>
-
+<script src="/javascript/actions.js"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </body>
 </html>

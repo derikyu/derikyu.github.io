@@ -51,6 +51,18 @@ body, h1, h2, p, ul, li, a, form, input, textarea, button {
     margin-bottom: 20px;
     font-family: "Roboto", Verdana, sans-serif;
     text-align: left !important;
+    position: relative;
+    width: fit-content;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #fec303;
+    height: 2px;
+    width: 100%;
 }
 
 /* Hero Section */
@@ -73,9 +85,18 @@ body, h1, h2, p, ul, li, a, form, input, textarea, button {
     margin-left: 50px;
 }
 
+.hero-subtitle-yellow {
+    font-size: 30px;
+    color: #fec303;
+    font-family: "Roboto", Verdana, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 140px;
+    font-weight: 100 !important;
+}
+
 .hero-subtitle {
     font-size: 30px;
-    color: #b7b5b5;
+    color: #fff;
     font-family: "Roboto", Verdana, sans-serif;
     margin-left: 50px;
     font-weight: 100 !important;
@@ -241,10 +262,18 @@ s
     font-family: "Roboto", Verdana, sans-serif;
 }
 
+.portfolio-sub-text {
+    text-align: center;
+    font-family: "Roboto", Verdana, sans-serif;
+    margin-bottom: 40px;
+}
+
 /* Contact Section */
 .contact {
     /* padding: 40px 0;
     height: 100vh; */
+    background-color: #000;
+    color: #fff !important;
 }
 
 .contact-columns {
@@ -263,11 +292,11 @@ s
 }
 
 .contact-title {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
+    margin-top: 50px;
     font-family: "Roboto", Verdana, sans-serif;
 }
-
 
 .contact-form {
     max-width: 500px;
@@ -291,8 +320,8 @@ textarea.form-control {
 }
 
 .btn-primary {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -323,4 +352,33 @@ textarea.form-control {
     font-weight: 100;
     font-size: 20px;
 
+}
+
+.sticky-buttons {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.button {
+    margin-bottom: 10px; /* Adjust the spacing between buttons as needed */
+    padding: 10px 20px;
+    background-color: #fec303; 
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Roboto", Verdana, sans-serif;
+    border: 0px;
+}
+
+.button:hover {
+    background-color: #838383; /
+}
+
+hr {
+color: #fec303;
+text-align: center;
 }
