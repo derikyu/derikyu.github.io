@@ -215,13 +215,12 @@ html {
 
 /* About Section */
 
-
 .about {
     position: relative;
     background-color: #fff;
     color: #000; 
     padding: 20px 0;
-    min-height: 75vh;
+    min-height: 80vh;
 }
 
 .about-columns {
@@ -428,7 +427,7 @@ html {
 .contact-links {
     list-style: none;
     font-family: "Roboto", Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .contact-links li  {
@@ -587,11 +586,12 @@ text-align: center;
     }
 
     .gallery-item img {
-        width: 150px;
+        max-height: 320px;
+        height: auto;
     }
 
     .project-title {
-        font-size: 10px;
+        font-size: 20px;
     
     }
 
@@ -655,7 +655,6 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    border: 1px solid red;
 }
 
 .gallery-item {
@@ -665,7 +664,7 @@ text-align: center;
 }
 
 .gallery-item img {
-    max-height: 220px;
+    max-height: 320px;
     height: auto;
 }
 
@@ -736,3 +735,22 @@ text-align: center;
     color: #fff; /* Set the color for the icons */
     font-size: 20px; /* Adjust the font size of the icons as needed */
   }
+
+
+  /* .notbr-text {
+      white-space: pre-wrap;
+      font-size: var(--fixation-size);
+      letter-spacing: var(--fixation-spacing);
+  }
+
+  .notbr-text p {
+      font-weight: var(--fixation-weight2);
+      line-height: var(--fixation-height);
+  }
+
+  .notbr-fixation {
+      font-weight: var(--fixation-weight1);
+      opacity: var(--fixation-opac);
+  } */
+
+  
