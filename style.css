@@ -736,6 +736,11 @@ text-align: center;
     font-size: 20px; /* Adjust the font size of the icons as needed */
   }
 
+  .quiz {
+    background-color: #000;
+    min-height: 100px;
+  }
+
 
   /* .notbr-text {
       white-space: pre-wrap;
