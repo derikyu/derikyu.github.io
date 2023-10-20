@@ -738,9 +738,33 @@ text-align: center;
 
   .quiz {
     background-color: #000;
-    min-height: 100px;
+    min-height: 300px;
   }
 
+.techTitle {
+
+}
+
+.techIdea {
+    color: #fec303;
+    font-weight: bold;
+    font-family: "Roboto", Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+}
+
+.generateBtn {
+    font-family: "Roboto", Verdana, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 30px !important;
+    margin-bottom: 50px !important;
+    display: block; /* Center-align the button */
+    margin: 0 auto; /* Center the button horizontally */
+    color: #000;
+    background-color: #fec303;
+}
 
   /* .notbr-text {
       white-space: pre-wrap;
