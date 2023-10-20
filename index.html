@@ -11,7 +11,7 @@
 <body>
 
 <!-- Hero Section -->
-<header class="hero">
+<header class="hero" id="hero">
     <div class="hero-content">
         <h1 class="hero-title-typewriter">Hello, I'm Derek Addo</h1>
         <p class="hero-subtitle-yellow">FinTech | BizOps | Product Mgmt</p>
@@ -22,11 +22,10 @@
         <div class="navbar-container">
             <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#Toolbox">Toolbox</a></li>
-                <li><a href="#currently">Currently</a></li>
-                <li><a href="#focus">Focus Areas</a></li>
-                <li><a href="#compass">Compass</a></li>
-                <!-- <li><a href="#gallery">Gallery</a></li> -->
+                <li><a href="#toolbox">Toolbox</a></li>
+                <li><a href="#portfolio">Focus Areas</a></li>
+                <!-- <li><a href="#compass">Compass</a></li> -->
+                <li><a href="#gallery-section">Gallery</a></li>
                 <!-- <li><a href="#endoresments">Endorsements</a></li> -->
                 <li><a href="https://medium.com/@whoisderekdash " target="_blank">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -35,42 +34,57 @@
     </nav>
 </header>
 
-<!-- <nav class="sticky-navbar" id="sticky-navbar">
-    <div class="sticky-container">
-        <ul class="sticky-menu" id="sticky-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#toolbox">Toolbox</a></li>
-            <li><a href="#currently">Currently</a></li>
-            <li><a href="#focus">Focus Areas</a></li>
-            <li><a href="#compass">Compass</a></li>
-            <li><a href="https://medium.com/@whoisderekdash " target="_blank">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>  
-        </ul>
-    </div>
-</nav> -->
-
 <!-- About Section -->
 <div class="about" id="about">
+    <!-- <nav class="sticky-navbar" id="sticky-navbar">
+        <div class="sticky-container">
+            <ul class="sticky-menu" id="sticky-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#toolbox">Toolbox</a></li>
+                <li><a href="#focus">Focus Areas</a></li>
+                <li><a href="#compass">Compass</a></li>
+                <li><a href="https://medium.com/@whoisderekdash " target="_blank">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>  
+            </ul>
+        </div>
+    </nav>  -->
     <div class="container">
         <div class="about-columns">
             <div class="about-column left"> 
                 <h2 class="section-title">About Me</h2>
-                <p class="about-text">With over 9 years of experience spanning three continents, I am a seasoned Product Operations
+                <p class="about-text">I am a seasoned Product Operations
                         specialist dedicated to orchestrating digital transformations and empowering geographically-distributed teams to
-                        harness technology for enhanced operational efficiency, business growth, and profitability. My expertise encompasses
-                        <b>Agile Project Management, Process Engineering, Enterprise Design Thinking,</b> and <b>Data Analytics.</b>
+                        harness technology for enhanced operational efficiency, business growth, and profitability.</p>
+                </b> 
+                <p class="about-text">My expertise encompasses: <b>Business Analysis, Agile/Scrum, Product Management, Process Engineering</b> and <b>Data Analytics.</b>
                 </p>
-                <p class="about-text" style="margin-bottom: 50px;">My academic foundation in BSc. Information Systems fuels my passion for crafting impactful
+                <!-- <p class="about-text" style="margin-bottom: 50px;">My academic foundation in BSc. Information Systems fuels my passion for crafting impactful
                     software solutions, especially within the context of emerging technology/markets. Proficient in data analytics and
                     visualization, I excel in translating data into actionable insights that drive informed decisions and yield
                     measurable outcomes.
-                </p>
-                <!-- <p class="about-text">
-                    FinTech
-                    Government 
-                    Digitial Marketing 
-                    Hospitality / Fashion 
                 </p> -->
+                <div class="highlight-container">
+                <div class="highlight-column">
+                    <h2>+9 years</h2>
+                    <p>of experience</p>
+                  </div>
+                  
+                  <div class="highlight-column">
+                    <h2>8 countries</h2>
+                    <p>worked in</p>
+                  </div>
+
+                  <div class="highlight-column">
+                    <h2>112 Scrum</h2>
+                    <p>sprints delivered</p>
+                  </div>
+                  
+                  <div class="highlight-column">
+                    <h2>2.5 million </h2>
+                    <p>happy users</p>
+                  </div>
+                </div>
+
                 <div id="brand-logos" class="brand-logos">
                     <div class="brand-container">
                         <!-- <h2 class="section-sub-title">Companies I've worked for...</h2> -->
@@ -104,9 +118,9 @@
     </div>
 </div>
 <!-- Currently Section -->
-<section id="currently" class="currently">
+<section id="toolbox" class="toolbox">
     <div class="container">
-        <h2 class="section-title">My Toolbox.</h2>
+        <h2 class="section-title">My Toolbox</h2>
         <div class="about-columns">
             <div class="about-column">
                 <h3 class="column-title">Business Analysis</h3>
@@ -118,6 +132,12 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Requirements Elicitation</td>
+                        </tr>
+                        <tr>
+                            <td>Process Engineering</td>
+                        </tr>
+                        <tr>
                             <td>UML/BPMN</td>
                         </tr>
                         <tr>
@@ -125,6 +145,9 @@
                         </tr>
                         <tr>
                             <td>Jira/Confluence</td>
+                        </tr>
+                        <tr>
+                            <td>Data Modelling</td>
                         </tr>
                     </tbody>
                 </table>
@@ -145,7 +168,16 @@
                             <td>Wordpress</td>
                         </tr>
                         <tr>
-                            <td>Wordpress</td>
+                            <td>Wireframing & Prototyping</td>
+                        </tr>
+                        <tr>
+                            <td>Source Control (Git)</td>
+                        </tr>
+                        <tr>
+                            <td>QA Testing (Gherkin)</td>
+                        </tr>
+                        <tr>
+                            <td>DevOps</td>
                         </tr>
                     </tbody>
                 </table>
@@ -186,7 +218,7 @@
             <tbody>
                 <tr>
                     <td><b>Working as:</b></td>
-                    <td>Software Entrepreneur - <a href="https://meltwater.org/" target="_blank">MEST</a><br>Lead Consultant - Idiah Labs<br>(Prev. Senior Operations Manager - <a href="https://tide.co" target="_blank">Tide</a>)</td>
+                    <td>Software Entrepreneur - <a href="https://meltwater.org/" target="_blank">MEST</a><br>(Prev. Senior Operations Manager - <a href="https://tide.co" target="_blank">Tide</a>)</td>
                 </tr>
                 <tr>
                     <td><b>Based in:</b></td>
@@ -218,39 +250,46 @@
         <div class="portfolio-items">
             <div class="portfolio-item">
                 <h5 class="project-title">Open Banking</h5>
-                <p class="portfolio-description">Supported the successful launch of an Open Banking-powered 'Invoicing & Accounting' app for iOS and Android for leading UK FinTech startup. Other notable projects include the development of a synthetic testing framework (Datadog), leading a cross-functional analytics forum and introducing automated reporting for flagship credit product.</p>
-                </div>
-                <div class="portfolio-item">
-                    <h5 class="project-title">Blockchain</h5>
-                    <p class="portfolio-description">Passionate advocate for blockchain technology. Currently, designing a blockchain-based
-                        KYC solution for <a href="#">hackathon</a> organised by Ghana's Central Bank to address the unique challenges to be of their Central
-                        Bank Digital Currency <a href="#">(the eCedi)</a>. We hypothesize that a blockchain-based KYC platform will not only resolve the existing inefficiencies but also drive the broader adoption of CBDCs by ensuring a secure, efficient, and privacy-conscious environment.</p>
-                </div>
-                <div class="portfolio-item">
-                    <h5 class="project-title">Future of Work</h5>
-                    <p class="portfolio-description">As a principal Product Analyst, I led a critical migration project with the UK's
-                        <a href="#">Ministry of Justice</a> 'Telephony' team and ensured the successful deployment of <a href="#">8x8 Cloud</a> to multiple National
-                        Business Centres in response to Covid19. Other notable projects include partnership with <a href="#">UNESCO</a> and commissioned by
-                        the city of Saint Etienne (France) to envision the workplace of the future for their 10th International Design
-                        Biennale. I played a pivotal role in design, launch, and fundraising for futuristic co-working space, <a href="https://www.biennale-design.com/saint-etienne/2017/en/programme/?ev=our-republique-291">
-                        'Our Republique’</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <h5 class="project-title">Distributed Knowledge</h5>
-                    <p class="portfolio-description">Working across London, Paris and New York offices for Global luxury fashion brand to validate business requirements and contribute to Agile software development for the global rollout of the ‘Digital Catalogue’ initiative resulting in an annual saving of +$400,000. Other notable projects included consulting for one of fastest-growing Estonian startups - project led to migration of multple internal repositories (Confluence, Notion, Office365) to decentralised single source of trust (Github)</p>
+                <p class="portfolio-description">Supported the successful launch of an Open Banking-powered 'Invoicing & Accounting'
+                    app for iOS and Android for leading UK FinTech startup. Other notable projects include the development of a
+                    synthetic testing framework (Datadog), leading a cross-functional analytics forum and introducing automated
+                    reporting for flagship credit product.</p>
+            </div>
+            <div class="portfolio-item">
+                <h5 class="project-title">Blockchain</h5>
+                <p class="portfolio-description">Passionate advocate for blockchain technology. Currently, designing a
+                    blockchain-based
+                    KYC solution for hackathon organised by Ghana's Central Bank to address the unique challenges to
+                    be of their Central
+                    Bank Digital Currency (the eCedi). We hypothesize that a blockchain-based KYC platform will not
+                    only resolve the existing inefficiencies but also drive the broader adoption of CBDCs by ensuring a secure,
+                    efficient, and privacy-conscious environment.</p>
+            </div>
+            <div class="portfolio-item">
+                <h5 class="project-title">Future of Work</h5>
+                <p class="portfolio-description">As a principal Product Analyst, I led a critical migration project with the UK's
+                    Ministry of Justice 'Telephony' team and ensured the successful deployment of 8x8 Cloud to 4 National
+                    Business Centres in response to Covid19. Other notable projects include partnership with UNESCO and commissioned by the city of Saint Etienne (France) to envision the workplace of the future for their 10th International Design
+                    Biennale. I played a pivotal role in design, launch, and fundraising for futuristic co-working space, 'Our Republique’
+                </p>
+            </div>
+            <div class="portfolio-item">
+                <h5 class="project-title">Distributed Knowledge</h5>
+                <p class="portfolio-description">Working across London, Paris and New York offices for Global luxury fashion brand
+                    to validate business requirements and contribute to Agile software development for the global rollout of the
+                    ‘Digital Catalogue’ initiative resulting in an annual saving of +$400,000. Other notable projects included
+                    consulting for one of fastest-growing Estonian startups - project led to migration of multple internal
+                    repositories (Confluence, Notion, Office365) to decentralised single source of trust (Github)</p>
             </div>
         </div>
         <p class="portfolio-sub-text" text><b>Note:</b> Outside of my professional capacity, I also have an interest in <b>AgriTech</b> and exploring <b>Innovation in Agriculture</b></p>
 
-        <div id="brand-logos" class="brand-logos">
+        <div id="brand-logos-section" class="brand-logos-section">
             <div class="brand-container">
                 <h2 class="section-sub-title">Brands I've consulted for...</h2>
-                <div class="brand-logos-list">
+                <div class="brand-logos-list" style="margin-top: 30px;">
                     <div class="brand-logo">
                         <img src="https://au.int/sites/default/files/auweblogo-en.png" alt="Brand 1">
-                    </div>
-                    <div class="brand-logo">
-                        <img src="https://cdn.sanity.io/images/kts928pd/production/254e805fc27df499af428dfa9fa9cdf9c119a7a3-1280x720.png" alt="Brand 2">
                     </div>
                     <div class="brand-logo">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UNESCO_logo.svg/640px-UNESCO_logo.svg.png" alt="Brand 3">
@@ -262,7 +301,10 @@
                         <img src="data:image/png;base64,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" alt="Brand 5">
                     </div>
                     <div class="brand-logo">
-                        <img src="https://cdn.sanity.io/images/92ui5egz/production/7c1c60e9afaaaa3cce61e5101717796d21b7f914-1426x1080.svg?rect=0,141,1426,799&w=150&h=84&fit=crop&auto=format" alt="Brand 6">
+                        <img src="data:image/png;base64,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" alt="Brand 6">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="https://cdn.sanity.io/images/kts928pd/production/254e805fc27df499af428dfa9fa9cdf9c119a7a3-1280x720.png" alt="Brand 2">
                     </div>
                 </div>
             </div>
@@ -270,9 +312,10 @@
     </div>
 </section>
 
+<div class="gallery-section" id="gallery-section">
 <div class="container">
     <h2 class="section-title">Recent Projects</h2>
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="gallery-item">
             <img src="https://web.uploads.tide.co/2021/05/25155524/Cashflow-insights-feature-image-2.png" alt="Project 1">
             <div class="project-title">Open Banking powered Cashflow Insights App - Tide </div>
@@ -286,6 +329,7 @@
             <div class="project-title"> Cloud Contact Center - Ministry of Justice, UK</div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
@@ -302,6 +346,12 @@
                 <p class="about-text"><b>Don't be shy.</b> Whether you have a burning question, a brilliant
                     idea, or just want to say hello, shoot me an email at <a href="#">derek.addo[at]meltwater.org</a> and let's
                     create something awesome together!</p>
+                </br>
+                <ul class="contact-links fa-ul">
+                    <li><a href="derek.addo@meltwater.org" target="_blank"><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>derek.addo[at]meltwater.org</a></li>      
+                    <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-phone"></i></span>+44 79 6147 2202</a></li> 
+                </ul>
+                </br>
                 <ul class="contact-links fa-ul">
                     <li><a href="https://uk.linkedin.com/in/derek-amoako-addo" target="_blank"><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span>LinkedIn</a></li>      
                     <li><a href="https://github.com/derikyu" target="_blank"><span class="fa-li"><i class="fa-brands fa-github"></i></span>Github</a></li> 
@@ -339,22 +389,11 @@
     </div>
 </section>
 
-<!-- Add Up and Down Buttons -->
-
 <div class="sticky-buttons">
-    <button class="button" id="prev-button">Prev</button>
-    <button class="button" id="next-button">Next</button>
+    <button class="button" id="prev-button"><a href="#hero">Back to Top</a></button>
 </div>
 
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="container">
-        &copy; Derek Amoako 2023
-    </div>
-</footer>
-
 <!-- JavaScript (at the end of the body) -->
-<script src="/javascript/actions.js"></script>
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </body>

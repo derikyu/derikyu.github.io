@@ -6,7 +6,12 @@ body, h1, h2, p, ul, li, a, form, input, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", Verdana, sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 /* Container styles */
 .container {
@@ -36,6 +41,11 @@ body, h1, h2, p, ul, li, a, form, input, textarea, button {
 }
 
 .sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border: 1px solid red;
     color: #fff;
     padding: 10px 0;
     text-align: right;
@@ -201,24 +211,23 @@ body, h1, h2, p, ul, li, a, form, input, textarea, button {
     margin-left: 50px;
     font-weight: 100 !important;
 }
-s
+
+
 /* About Section */
 
-.about-me {
- 
-}
 
 .about {
+    position: relative;
     background-color: #fff;
     color: #000; 
     padding: 20px 0;
-    height: 100vh; 
+    min-height: 75vh;
 }
 
 .about-columns {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .about-column {
@@ -245,7 +254,7 @@ s
 }
 
 .about-text {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
     font-family: "Roboto", Verdana, sans-serif;
 }
@@ -274,9 +283,8 @@ s
 }
 
 /* Brand Logos Section */
-.brand-logos {
+.brand-logo-section {
     background-color: #fff;
-    /* padding: 10px 0; */
 }
 
 
@@ -286,13 +294,14 @@ s
 }
 
 .brand-logos-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(6,1fr);
 }
 
 .brand-logo {
     flex: 1;
-    max-width: 10%; /* Adjust the size of the logos as needed */
+    max-width: 70%; /* Adjust the size of the logos as needed */
     padding: 10px;
     text-align: center;
 }
@@ -302,8 +311,8 @@ s
     height: auto;
 }
 
-/* Currently Section */
-.currently {
+/* Toolbox Section */
+.toolbox {
     background-color: #000; /* Black background color */
     color: #fff; /* Text color */
     padding: 40px 0;
@@ -357,7 +366,7 @@ s
 /* Portfolio Section */
 .portfolio {
     padding: 40px 0;
-    height: 100vh; 
+    min-height: 100vh;
 }
 
 
@@ -371,7 +380,7 @@ s
 }
 
 .project-title {
-    font-size: 22px !important;
+    font-size: 22px;
     margin-bottom: 20px;
     font-family: "Roboto", Verdana, sans-serif;
     margin-top: 15px;
@@ -448,7 +457,7 @@ s
 .form-group {
     margin-bottom: 20px;
     font-family: "Roboto", Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .form-control {
@@ -504,7 +513,17 @@ textarea.form-control {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-decoration: none;
+    color: #fff;
 }
+
+.sticky-buttons a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto", Verdana, sans-serif;
+    font-size: 20px;
+}
+
 
 .button {
     margin-bottom: 10px; /* Adjust the spacing between buttons as needed */
@@ -536,16 +555,28 @@ text-align: center;
     }
     
     .hero-subtitle-yellow {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .hero-subtitle {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .about-columns {
         display: block;
     }
+
+    .brand-logos-list {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .brand-logo img {
+        max-width: 110%;
+    }
+    
+.section-title {
+    margin-top: 20px;
+}
 
     .currently-table {
         width: 100%;
@@ -553,6 +584,15 @@ text-align: center;
 
     .portfolio-items {
         display: block;
+    }
+
+    .gallery-item img {
+        width: 150px;
+    }
+
+    .project-title {
+        font-size: 10px;
+    
     }
 
     .contact-columns {
@@ -563,15 +603,17 @@ text-align: center;
         width: 100%;
     }
 
-    .brand-logo {
-        max-width: 100%;
-        padding: 8px;
-    }
-
     form {
         margin-top: 30px;
     }
 
+    .navbar-menu a {
+        font-size: 20px;
+    }
+
+    .navbar-container {
+        margin-top: 0px !important;
+    }
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -613,6 +655,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
+    border: 1px solid red;
 }
 
 .gallery-item {
@@ -632,6 +675,15 @@ text-align: center;
     font-family: "Roboto", Verdana, sans-serif;
 }
 
+
+.highlight-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
 /* Media Query for Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .gallery-item {
@@ -643,4 +695,44 @@ text-align: center;
     .gallery-item {
         flex: 0 0 100%; /* Single column on even smaller screens */
     }
+    .highlight-container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
 }
+
+  .footer {
+    background-color:#fec303; 
+    color: #000; 
+    padding: 10px;
+    display: flex; /* Use flexbox to create a two-column layout */
+    justify-content: space-between; /* Space items evenly horizontally */
+    align-items: center; /* Align items vertically to the center */
+  }
+  
+  /* Style for the logo */
+  .logo {
+    font-weight: bold; 
+    font-size: 24px; 
+    margin-left: 20px;
+  }
+  
+  /* Style for the social icons */
+  .social-icons {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex; /* Use flexbox to arrange the icons horizontally */
+  }
+  
+  /* Style for individual social icons */
+  .social-icon {
+    margin-right: 10px; /* Add spacing between social icons */
+  }
+  
+  /* Style for social icon links */
+  .social-icon a {
+    text-decoration: none; /* Remove underlines from the links */
+    color: #fff; /* Set the color for the icons */
+    font-size: 20px; /* Adjust the font size of the icons as needed */
+  }
