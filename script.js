@@ -1,11 +1,10 @@
 // Arrays of random technology ideas and industry/sector ideas
 const techIdeas = [
-    "Develop an immersive mobile app",
     "Create a machine learning model",
-    "Build a website for e-commerce",
+    "Build a marketplace website",
     "Design a blockchain-based solution",
     "Develop a virtual reality experience",
-    "Build a chatbot for customer support",
+    "Build a chatbot",
     "Design a new IoT device",
     "Develop a gaming app",
     "Build a social networking platform"
@@ -21,9 +20,7 @@ const sectorIdeas = [
     "for MEST",
     "in transportation",
     "in retail",
-    "for real estate",
-    "in manufacturing",
-    "for tourism",
+    "for real estate",+
     "for MEST"
 ];
 
@@ -34,7 +31,7 @@ function generateIdea() {
     const techIdea = techIdeas[randomTechIndex];
     const sectorIdea = sectorIdeas[randomSectorIndex];
     //const combinedIdea = `Develop a ${techIdea} ${sectorIdea} project.`;
-    const combinedIdea = `${techIdea} ${sectorIdea}`;
+    const combinedIdea = `${techIdea}...${sectorIdea}`;
     document.getElementById("techIdea").textContent = combinedIdea;
 }
 
